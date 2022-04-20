@@ -68,8 +68,7 @@ function Wordle() {
   return (
     <body>
     <Div>
-      <Nav />
-      <h1>kelly's words of words</h1>
+    <h1>kelly's words of words</h1>
     {isGameOver && <h2> Game Over</h2>}
       {wordGrid.map((row, rowIndex) => (
       <RowWrapper key={rowIndex}>
