@@ -11,8 +11,10 @@ body{
   background-color: #0B0D1C;
   height: 100vh;
   width: 100vw;
+  text-decoration: none;
+  overflow: hidden;
 }
-
+a{  text-decoration: none;}
 h1{
   font-weight: 800;
   font-size:35px;
@@ -20,7 +22,6 @@ h1{
   color: #8281A0;
   letter-spacing: 1px;
 }
-
 h2{
   font-weight: 800;
   font-size:20px;
@@ -29,9 +30,63 @@ h2{
   letter-spacing: 1px;
 }
 
+/* NAV BAR */
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index:10;
+}
+#navBack{
+  margin-bottom: 1rem;
+}
+nav div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav div a{
+  display:flex;
+  text-align: center;
+  text-decoration: none;
+  font-size: 45px;
+  color: var(--purple);
+  border-radius: 20px;
+  background-color: var(--darkGrey);
+  padding: .5rem;
+  margin: 1rem;
+}
+#navBack div a{
+  display:flex;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--purple);
+  border-radius: 20px;
+  background-color: var(--darkGrey);
+  padding: .2rem;
+  margin: .5rem;
+}
+nav div a:hover{
+  color: var(--lightGrey);
+  transform: translateY(-2px);
+}
+
 
 button:hover{
   transform: translateY(-2px);
   background-color: #f778a9;
 
 }
+
+:root{
+  --purple: #904BFF;
+  --lightPurple: #BC9AFF;
+  --lightGrey: #838790; 
+  --grey: #484848;
+  --darkGrey: #252525;
+  --offWhite: #f1f1f1;
+}
+
