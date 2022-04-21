@@ -9,7 +9,7 @@ function Wordle() {
 
   const [currentFocusedRow, setCurrentFocusedRow] = useState(0);
   const [isGameOver, setIsGameOver] = useState(false);
-  const solution = "farts";
+  const solution = "fresh";
 
 
   useEffect(() => {
