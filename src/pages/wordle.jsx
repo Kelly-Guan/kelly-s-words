@@ -9,7 +9,7 @@ function Wordle() {
 
   const [currentFocusedRow, setCurrentFocusedRow] = useState(0);
   const [isGameOver, setIsGameOver] = useState(false);
-  const solution = "fresh";
+  const solution = "candy";
 
 
   useEffect(() => {
@@ -67,7 +67,9 @@ function Wordle() {
 
   return (
     <body>
+
     <Div>
+    <Nav />
     <h1>kelly's words of words</h1>
     {isGameOver && <h2> Game Over</h2>}
       {wordGrid.map((row, rowIndex) => (

@@ -11,8 +11,6 @@ function Nav() {
         <div id="h4" >
             <Link to="/"><a><img src={logo}/></a></Link>
             <Link to="/wordle"><a>my wordle</a></Link>
-            <Link to="/candycrush"><a>candycrush</a></Link>
-            <Link to="/honey"><a>honey</a></Link>
         </div>
       </div>
       </nav>

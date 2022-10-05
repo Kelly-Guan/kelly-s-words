@@ -8,10 +8,8 @@ function Nav() {
     return(
         <nav>
         <div id="h4" >
-            <Link to="/"><a><img src={logo}/></a></Link>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src={logo}/></a>
             <Link to="/wordle"><a>my wordle</a></Link>
-            <Link to="/candycrush"><a>candycrush</a></Link>
-            <Link to="/honey"><a>honey</a></Link>
         </div>
       </nav>
     )
