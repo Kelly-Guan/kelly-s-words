@@ -9,17 +9,17 @@ function Wordle() {
 
   const [currentFocusedRow, setCurrentFocusedRow] = useState(0);
   const [isGameOver, setIsGameOver] = useState(false);
-  const solution = "candy";
+  const solution = "hireme";
 
 
   useEffect(() => {
     function initalizeWordGrid() {
       let newWordGrid = [];
-      for (let i = 0; i < 6; i++){
+      for (let i = 0; i < 7; i++){
         newWordGrid.push([])
       }
-      for (let i = 0; i < 6; i++){
-        for (let  j= 0; j < 5; j++){
+      for (let i = 0; i < 7; i++){
+        for (let  j= 0; j < 6; j++){
           newWordGrid[i].push({letter: "", state: "empty"}) // states 1. correct 2. wrong position 3. incorrect 4. empty
         }
       }
